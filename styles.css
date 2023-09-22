@@ -9,34 +9,35 @@ body {
 
 .card-container {
     perspective: 1000px;
-    display: inline-block; /* Add this line to center the card horizontally */
+    display: inline-block;
 }
 
 .card {
-    width: 200px;
-    height: 300px;
+    width: 100%; /* Change to 100% width to fit the screen */
+    max-width: 400px; /* Adjust the max-width as needed */
+    height: auto; /* Adjust the height automatically */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
-    margin: 0 auto; /* Center the card horizontally on larger screens */
+    margin: 0 auto;
 }
 
 /* Media query for smaller screens (phones) */
 @media (max-width: 768px) {
     body {
-        align-items: flex-start; /* Align content to the top */
+        align-items: flex-start;
         padding: 20px;
     }
 
     .card {
         width: 100%; /* Take the full width of the screen */
         max-width: 100%; /* Adjust the max-width to fit smaller screens */
-        height: auto; /* Adjust the height automatically */
+        height: auto;
         margin-bottom: 20px;
     }
 
     .card-container {
-        perspective: none; /* Remove perspective */
-        text-align: center; /* Center the card horizontally on smaller screens */
+        perspective: none;
+        text-align: center;
     }
 }
