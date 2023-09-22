@@ -1,6 +1,13 @@
-const cardContainer = document.querySelector('.card-container');
+let isFlipped = false;
 
-cardContainer.addEventListener('click', function () {
-    const card = document.querySelector('.card');
-    card.style.transform = card.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
+document.getElementById('card').addEventListener('click', function () {
+  const inner = this.querySelector('.inner');
+
+  if (isFlipped) {
+    inner.style.transform = 'rotateY(0deg)';
+  } else {
+    inner.style.transform = 'rotateY(180deg)';
+  }
+
+  isFlipped = !isFlipped;
 });
