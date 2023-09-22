@@ -1,3 +1,4 @@
+/* Base styles for larger screens (computers) */
 body {
     display: flex;
     justify-content: center;
@@ -38,4 +39,27 @@ body {
 
 .card-container:hover .card {
     transform: rotateY(180deg);
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Align content to the top */
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%; /* Take the full width of the screen */
+        max-width: 300px; /* Limit the width on larger screens */
+        height: auto; /* Adjust the height automatically */
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        perspective: none; /* Remove perspective */
+    }
+
+    .card-container:hover .card {
+        transform: none; /* Remove the flip effect on hover */
+    }
 }
