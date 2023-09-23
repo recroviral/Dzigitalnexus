@@ -87,11 +87,28 @@ body {
 }
 
 /* Responsive Structure */
+
+@media (max-width: 1024px) {
+  /* Smaller Resolution Desktops and Laptops */
+  .business-card {
+    width: 428px;
+    height: 750px;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* Smaller Resolution Desktops and Laptops */
+  .business-card {
+    width: 314px;
+    height: 550px;
+  }
+}
+
 @media (max-width: 800px) {
   /* Smaller Resolution Desktops and Laptops */
   .business-card {
-    width: 400px;
-    height: 700px;
+    width: 514px;
+    height: 900px;
   }
 }
 
@@ -111,10 +128,18 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 389px) {
   /* Even Smaller devices */
   .business-card {
-    width: 200px;
-    height: 350px;
+    width: 300px;
+    height: 525px;
+  }
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 420px) {
+  /* Even Smaller devices */
+  .business-card {
+    width: 352px;
+    height: 600px;
   }
 }
