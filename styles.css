@@ -5,7 +5,7 @@ body {
 }
 
 /* Styling the button */
-/*.btn {
+.btn {
   position: absolute;
   left: 50%;
   top: 80%;
@@ -16,9 +16,9 @@ body {
   background: agba (0, 0, 0,0.1); 
   transform: translate (-508,-508); 
   border-radius: 10px;
-}*/
+}
 
-.btn {
+/*.btn {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Quicksand", Arial, sans-serif;
@@ -59,7 +59,7 @@ body {
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
       background: #2c98f0;
       color: #fff; }
-
+*/
 .App {
   display: flex;
   justify-content: center;
